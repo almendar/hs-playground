@@ -9,4 +9,7 @@ import           Acme.Missiles
 
 someFunc :: IO ()
 -- someFunc = T.putStrLn "someFunc"
-someFunc = launchMissiles
+someFunc = do
+    a <- getLine
+    putStrLn a
+    launchMissiles
